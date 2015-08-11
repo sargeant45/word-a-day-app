@@ -14,6 +14,7 @@
 		A0D36F001B7A68DB00C426DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D36EFF1B7A68DB00C426DA /* Images.xcassets */; };
 		A0D36F031B7A68DB00C426DA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D36F011B7A68DB00C426DA /* LaunchScreen.xib */; };
 		A0D36F0F1B7A68DB00C426DA /* WordADayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D36F0E1B7A68DB00C426DA /* WordADayTests.m */; };
+		A0D36F191B7A703100C426DA /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0D36F181B7A703100C426DA /* dictionary.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		A0D36F081B7A68DB00C426DA /* WordADayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordADayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D36F0D1B7A68DB00C426DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0D36F0E1B7A68DB00C426DA /* WordADayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordADayTests.m; sourceTree = "<group>"; };
+		A0D36F181B7A703100C426DA /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		A0D36EF11B7A68DB00C426DA /* WordADay */ = {
 			isa = PBXGroup;
 			children = (
+				A0D36F181B7A703100C426DA /* dictionary.txt */,
 				A0D36EF61B7A68DB00C426DA /* AppDelegate.h */,
 				A0D36EF71B7A68DB00C426DA /* AppDelegate.m */,
 				A0D36EF91B7A68DB00C426DA /* ViewController.h */,
@@ -168,6 +171,7 @@
 				TargetAttributes = {
 					A0D36EEE1B7A68DB00C426DA = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 596T7J7FB6;
 					};
 					A0D36F071B7A68DB00C426DA = {
 						CreatedOnToolsVersion = 6.4;
@@ -201,6 +205,7 @@
 			files = (
 				A0D36EFE1B7A68DB00C426DA /* Main.storyboard in Resources */,
 				A0D36F031B7A68DB00C426DA /* LaunchScreen.xib in Resources */,
+				A0D36F191B7A703100C426DA /* dictionary.txt in Resources */,
 				A0D36F001B7A68DB00C426DA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,20 +351,30 @@
 		A0D36F131B7A68DB00C426DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WordADay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A0D36F141B7A68DB00C426DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WordADay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
